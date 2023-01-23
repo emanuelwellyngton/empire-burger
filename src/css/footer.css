@@ -1,0 +1,86 @@
+#footer {
+    text-align: center;
+    background-color: var(--branco);
+    padding: 18.19px 5%;
+}
+
+#footer_logo {
+    color: var(--amarelo);
+}
+
+#footer_logo::before {
+    content: url(../img/empire-burger_icon--vermelho.svg)
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    padding: 18.31px 0;
+    border-bottom: 1px solid rgba(29, 6, 5, 0.15);
+}
+
+.ifood a {
+    margin-right: 17.5px;
+    content: url(../img/ifood_icon--amarelo.svg);
+}
+
+.instagram a {
+    content: url(../img/instagram_icon--amarelo.png);
+}
+
+#footer_nav {
+    padding: 13.81px 0;
+    border-bottom: 1px solid rgba(29, 6, 5, 0.15);
+}
+
+.footer_nav--item {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #3A210B;
+}
+
+.footer_nav--item:hover {
+    font-weight: 700;
+    transition: .2s;
+}
+
+#direitos {
+    font-family: 'Inter' sans-serif;
+    font-weight: 400;
+    color: rgba(2, 14, 31, 0.69);
+    padding-top: 15.81px;
+    display: block;
+}
+
+#direitos em {
+    font-weight: 700;
+}
+
+@media screen and (min-width: 900px) {
+    #footer_logo, .social, #footer_nav {
+        display: flex;
+        border: none;
+        padding: 0;
+    }
+
+    #footer {
+        padding: 0 15% 12.29px;
+    }
+
+    .footer_nav--item {
+        padding-right: 31px;
+    }
+
+    .footer_nav--item:last-child {
+        padding-right: 0;
+    }
+
+    #footer div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 18.19px 0;
+        border-bottom: 1px solid rgba(29, 6, 5, 0.15);
+    }
+}

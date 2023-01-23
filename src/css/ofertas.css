@@ -1,0 +1,81 @@
+#ofertas {
+    padding: 0 10% 37.94px;
+}
+
+#ofertas_title {
+    font-weight: 400;
+    font-family: 'Lilita One', cursive;
+    font-size: 25px;
+    line-height: 28px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    color: rgba(29, 6, 5, 0.9);
+}
+
+#ofertas_descrition {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(29, 6, 5, 0.69);
+    margin-bottom: 16px;
+}
+
+#ofertas_nav {
+    display: grid;
+    grid-template-rows: repeat(3, 200px);
+    row-gap: 8px;
+}
+
+.oferta {
+    border-radius: 10px;
+    padding: 16.66px 23.33px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.oferta_title {
+    font-family: 'Lilita One', cursive;
+    font-weight: 400;
+    font-size: 20.48;
+    line-height: 23px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.oferta_peso {
+    font-weight: 400;
+    font-size: 18.43px;
+    line-height: 26px;
+    color: rgba(255, 255, 255, 0.69);
+}
+
+#oferta--combo {
+    background-image: url(../img/combo.png);
+}
+
+#oferta--batata {
+    background-image: url(../img/batata.png);
+}
+
+#oferta--sorvete {
+    background-image: url(../img/sorvete.png);
+}
+
+@media screen and (min-width: 900px) {
+    #ofertas_nav {
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows:none;
+        grid-auto-rows: 200px;
+        gap: 30px;
+    }
+
+    .oferta:first-child {
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    #ofertas {
+        padding: 0 15% 37.94px;
+    }
+}

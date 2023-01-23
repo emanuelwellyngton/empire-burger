@@ -1,0 +1,169 @@
+#header {
+    padding: 14.34px 10%;
+    background-color:  rgba(59, 32, 11, 0.05);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    font-weight: 400;
+    font-size: 29.38px;
+    line-height: 32px;
+    text-transform: uppercase;
+}
+
+.logo em {
+    font-weight: 900;
+}
+
+#header_logo {
+    color: rgba(29, 6, 5, 0.9);
+}
+
+#header_logo::before {
+    content: url(../img/empire-burger_icon--escuro.svg);
+}
+
+#social-nav {
+    display: none;
+}
+
+#menu_icon {
+    border-radius: 3px;
+    background-color: var(--menu-icon-bg);
+    border: none;
+    padding: 7px;
+    cursor: pointer;
+    content: url(../img/menu.svg);
+}
+
+#menu_list {
+    visibility: hidden;
+    width: 100%;
+    height: 0;
+    display: flex;
+    position:absolute;
+    flex-direction: column;
+    background-color: var(--laranja-claro);
+    transition: .6s;
+    overflow-y: hidden;
+    top: 70px;
+    left: 0;
+}
+
+.menu_item {
+    padding: 15px 10%;
+}
+
+.menu_item:hover {
+    background-color: var(--menu-icon-bg);
+}
+
+.menu_item a {
+    color: #635352;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25.2px;
+}
+
+.menu_item a:hover {
+    color: #34201F;
+    font-weight: 700;
+}
+
+#menu.active #menu_icon {
+    content: url(../img/close.svg);
+    width: 16px;
+    height: 16px;
+}
+
+#menu.active #menu_list {
+    visibility: visible;
+    overflow-y: auto;
+    height: calc(100vh - 70px);
+    width: 100%;
+    top: 70px;
+    left: 0;
+}
+
+@media screen and (min-width: 900px) {
+    #header {
+        padding: 14.34px 15%;
+    }
+
+    #menu_icon {
+        display: none;
+    }
+
+    #social-nav {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #menu_list {
+        visibility: visible;
+        height: auto;
+        width: auto;
+        position: initial;
+        flex-direction: row;
+        background-color: transparent;
+        overflow-y:unset;
+        top: initial;
+        left: initial;
+    }
+
+    .menu_item {
+        padding: 0;
+        margin-right: 6px;
+    }
+
+    .menu_item:last-child {
+        margin-right: 0;
+    }
+
+    #social-nav_lista {
+        display: flex;
+        align-items: center;
+    }
+
+    .menu_item:hover {
+        background-color: transparent;
+    }
+
+    #header_social--ifood {
+        content: url(../img/ifood.svg);
+        margin-right: 17.5px;
+    }
+
+    #header_social--insta {
+        content: url(../img/instagram-brands.svg);
+        padding-right: 17.5px;
+        margin-right: 13px;
+        border-right: 1px solid #B50B04;
+    }
+
+    #header_ctt {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 25px;
+        color: #34201F;
+        background-color: var(--amarelo);
+        border-radius: 4px;
+        padding: 4px 16px;
+        border: none;
+        cursor: pointer;
+        align-items: center;
+        height: auto;
+        display: flex;
+        align-items: center;
+        gap: 9.29px;
+    }
+}

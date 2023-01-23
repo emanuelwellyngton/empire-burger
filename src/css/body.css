@@ -1,0 +1,19 @@
+body {
+    font-family: "Lato", sans-serif;
+    background-color: #FAF3F2;;
+}
+
+:root {
+    --laranja-claro: #FAE2CB;
+    --vermelho-escuro: #635352;
+    --menu-icon-bg: rgba(29, 6, 5, 0.15);
+    --sction-title: rgba(29, 6, 5, 0.9);
+    --amarelo: #F59A1B;
+    --vermelho: #F43127;
+    --branco: #FFFFFF;
+}
+
+a {
+    color: initial;
+    text-decoration: none;
+}

@@ -1,0 +1,29 @@
+#instagram {
+    padding: 0 10%;
+    margin-bottom: 64.23px;
+}
+
+#instagram_sub {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: rgba(29, 6, 5, 0.69);
+}
+
+#instagram_title {
+    font-weight: 400;
+    font-family: 'Lilita One', cursive;
+    font-size: 41.02px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--vermelho);
+}
+
+@media screen and (min-width: 900px) {
+    #instagram {
+        padding: 0;
+        margin: 0;
+    }
+}

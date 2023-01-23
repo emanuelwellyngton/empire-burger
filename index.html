@@ -5,8 +5,137 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Empire Burger</title>
+    <link rel="shortcut icon" href="src/img/empire-burger_icon--escuro.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lato:wght@100&display=swap" rel="stylesheet">     <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/body.css">
+    <link rel="stylesheet" href="src/css/header.css">
+    <link rel="stylesheet" href="src/css/home.css">
+    <link rel="stylesheet" href="src/css/beneficios.css">
+    <link rel="stylesheet" href="src/css/ofertas.css">
+    <link rel="stylesheet" href="src/css/horario.css">
+    <link rel="stylesheet" href="src/css/instagram.css">
+    <link rel="stylesheet" href="src/css/localizacao.css">
+    <link rel="stylesheet" href="src/css/footer.css">
 </head>
 <body>
-    
+    <header id="header">
+        <a id="header_logo" class="logo" href="#"><em>Empire</em> Burger</a>
+        <nav id="menu">
+                <div id="menu_icon"></div>
+                <ul id="menu_list">
+                    <li class="menu_item"><a href="#home">Home</a></li>
+                    <li class="menu_item"><a href="#ofertas">Promoção</a></li>
+                    <li class="menu_item"><a href="#">Cardapio</a></li>
+                    <li class="menu_item"><a href="#">Comentario</a></li>
+                    <li class="menu_item"><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+            <nav id="social-nav">
+                <ul id="social-nav_lista">
+                    <li class="social-nav_item"><a id="header_social--ifood" href="#"></a></li>
+                    <li class="social-nav_item"><a id="header_social--insta" href="#"></a></li>
+                    <li class="social-nav_item">
+                        <a href="#"><span id="header_ctt"><object data="/src/img/whatsapp_icon.svg" type="image/svg+xml"></object>Contato</span></a>
+                    </li>
+                </ul>
+            </nav>
+    </header>
+    <main>
+        <section id="home">
+            <span>
+                <p id="experiencia">Uma nova experiência!</p>
+                <h2 id="burger">King <em>burger</em></h2>
+                <p id="rei">Para quem tem um <em>Apetite de um REI!</em></p>
+                <button id="btn--home">Comprar Agora</button>
+            </span>
+        </section>
+        <section id="section_beneficios">
+            <ul id="beneficios">
+                <li class="beneficio">
+                    <object class="beneficio_icon" data="src/img/artezanal.svg" type="image/svg+xml"></object>
+                    <span>
+                        <h3 class="beneficio_title">Artezanal</h3>
+                        <p class="beneficio_descrition">Nossas receitas são feitas com todo cuidado</p>
+                    </span>
+                </li>
+                <li class="beneficio">
+                    <object class="beneficio_icon" data="src/img/atendimento.svg" type="image/svg+xml"></object>
+                    <span>
+                        <h3 class="beneficio_title">Atendimento</h3>
+                        <p class="beneficio_descrition">Totalmente personalizado</p>
+                    </span>
+                </li>
+                <li class="beneficio">
+                    <object class="beneficio_icon" data="src/img/delivery.svg" type="image/svg+xml"></object>
+                    <span>
+                        <h3 class="beneficio_title">DELIVERY Speed</h3>
+                        <p class="beneficio_descrition">Entregamos menos de 30 minutos</p>
+                    </span>
+                </li>
+        </section>
+        <section id="ofertas">
+            <h2 id="ofertas_title">Ofertas especiais</h2>
+            <p id="ofertas_descrition">Aproveite todas as nossas ofertas, fiquei de olho porque sempre estamos mudando o nosso cardapio.</p>
+            <ul id="ofertas_nav">
+                <li id="oferta--combo" class="oferta">
+                    <h3 class="oferta_title">bURGER PRIME+BATATA</h3>
+                    <p class="oferta_peso">250kg</p>
+                </li>
+                <li id="oferta--batata" class="oferta">
+                    <h3 class="oferta_title">batata</h3>
+                    <p class="oferta_peso">150kg</p>
+                </li>
+                <li id="oferta--sorvete" class="oferta">
+                    <h3 class="oferta_title">Sorvete</h3>
+                    <p class="oferta_peso">50kg</p>
+                </li>
+            </ul>
+        </section>
+        <section id="info">
+            <div id="horario">
+                <object id="horario_icon" data="src/img/relogio.svg" type="image/svg+xml"></object>
+                <hr>
+                <span id="horario_texto">
+                    <h3 id="horario_title">Horário de funcionamento</h3>
+                    <p class="horario_descrition">Segunda a sexta: 17h00 - 23h00</p>
+                    <p class="horario_descrition">Sabado a Domíngo: 18h30 - 23h00</p>
+                </span>
+            </div>
+            <div id="instagram">
+                <p id="instagram_sub">Não esqueça de marcar a gente no Instagram:</p>
+                <h2 id="instagram_title">#empireburger</h2>
+            </div>
+        </section>
+        <section id="localizacao">
+            <h3 id="localizacao_title">Onde ficar a nosso castelo</h3>
+            <p id="localizacao_sub">Estaremos de portas abertas para a nossa realeza.</p>
+            <iframe id="localizacao_mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d507026.17056916107!2d-37.192065067187485!3d-6.873589099999983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7af0ddb5f9c5445%3A0x143ad03d0bfca97d!2sNT%20Consultoria%20-%20Solu%C3%A7%C3%B5es%20empresarias!5e0!3m2!1spt-BR!2sbr!4v1673403722311!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </main>
+        <footer id="footer">
+            <div>
+                <a class="logo" id="footer_logo" href="#"><em>Empire</em> burger</a>
+                <ul class="social">
+                    <li class="ifood">
+                        <a href="#"></a>
+                    </li>
+                    <li class="instagram">
+                        <a href="#"></object></a>
+                    </li>
+                </ul>
+                <ul id="footer_nav">
+                    <li class="footer_nav--item"><a href="#">Home</a></li>
+                    <li class="footer_nav--item"><a href="#">Localização</a></li>
+                    <li class="footer_nav--item"><a href="#">Cardapio</a></li>
+                    <li class="footer_nav--item"><a href="#">Sobre</a></li>
+                </ul>
+            </div>
+        <span id="direitos"><em>2022 © EmpireBurger. </em>Todos os direitos reservados.</span>
+    </footer>
+    <script src="src/js/menu-mobile.js"></script>
 </body>
 </html>

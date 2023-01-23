@@ -1,0 +1,23 @@
+#localizacao_title {
+    font-weight: 400;
+    font-family: 'Lilita One', cursive;
+    font-size: 25px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgba(29, 6, 5, 0.9);
+}
+
+#localizacao_sub {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: rgba(29, 6, 5, 0.69);
+    margin-bottom: 16px;
+}
+
+#localizacao_mapa {
+    height: 207.28px;
+    width: 100%;
+}

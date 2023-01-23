@@ -1,0 +1,77 @@
+#home {
+    height: 100%;
+    padding: 0 10%;
+    background-image: url(../img/Banner\ mobile\ 1.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+#home span {
+    position: relative;
+    top: 107.13px;
+}
+
+#experiencia {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: rgba(29, 6, 5, 0.9);
+}
+
+#burger {
+    font-weight: 400;
+    font-family: 'Lilita One', cursive;
+    font-size: 53.34px;
+    text-transform: uppercase;
+    color: #3B200B;
+}
+
+#burger em{
+    color: var(--amarelo);
+}
+
+#rei {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(29, 6, 5, 0.69);
+    margin-bottom: 16.23px;
+}
+
+#rei em {
+    font-weight: 700;
+    border-radius: 8px;
+    background-color: var(--amarelo);
+    padding: 0 5px;
+}
+
+#btn--home {
+    background-color: var(--vermelho);
+    border: none;
+    border-radius: 5.08px;
+    padding: 10.16px 20.32px;
+    color: var(--branco);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 460px) {
+    #home {
+        background-position: center;
+        background-size: auto 100%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    #home {
+        background-image: url(../img/Banner\ 01\ -\ 1.png);
+        height: 390px;
+        background-position: center;
+        background-size: auto 100%;
+        padding: 0 15%;
+    }
+}
